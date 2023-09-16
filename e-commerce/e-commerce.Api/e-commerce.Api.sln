@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-commerce.Api", "e-commerce.Api.csproj", "{6A418D51-396C-42CA-BEE2-ED05EA3C5DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "..\Core\Core.csproj", "{11E95908-692D-422F-BD34-7848B791F0F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastracure", "..\Infrastracure\Infrastracure.csproj", "{3F6D2BBD-F06D-49CE-B82B-484B424F016D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A418D51-396C-42CA-BEE2-ED05EA3C5DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A418D51-396C-42CA-BEE2-ED05EA3C5DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A418D51-396C-42CA-BEE2-ED05EA3C5DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A418D51-396C-42CA-BEE2-ED05EA3C5DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11E95908-692D-422F-BD34-7848B791F0F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E95908-692D-422F-BD34-7848B791F0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E95908-692D-422F-BD34-7848B791F0F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E95908-692D-422F-BD34-7848B791F0F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F6D2BBD-F06D-49CE-B82B-484B424F016D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6D2BBD-F06D-49CE-B82B-484B424F016D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6D2BBD-F06D-49CE-B82B-484B424F016D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6D2BBD-F06D-49CE-B82B-484B424F016D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC7CDD83-2405-4F9A-8148-6AFF130E28F8}
+	EndGlobalSection
+EndGlobal
