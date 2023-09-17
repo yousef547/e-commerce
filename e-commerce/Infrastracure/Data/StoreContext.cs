@@ -10,5 +10,7 @@ namespace Infrastracure.Data
                 
         }
         public DbSet<Products> products { get; set; }
+        public DbSet<ProductBrand> ProductBrands { get; set; }
+        public DbSet<ProductType> ProductTypes { get; set; }
     }
 }
