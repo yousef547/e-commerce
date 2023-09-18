@@ -1,0 +1,18 @@
+[
+  New ProductType
+    Id= 1,
+    Name= "Boards"
+  },
+  New ProductType
+    Id= 2,
+    Name= "Hats"
+  },
+  New ProductType
+    Id= 3,
+    Name= "Boots"
+  },
+  New ProductType
+    Id= 4,
+    Name= "Gloves"
+  }
+]

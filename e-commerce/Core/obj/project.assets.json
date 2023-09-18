@@ -8,24 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\AL_hamd\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {}
+    "C:\\Users\\it legend\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\project\\e-commerce\\e-commerce\\Core\\Core.csproj",
+      "projectUniqueName": "D:\\Anther Project\\e-commerce\\e-commerce\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "D:\\project\\e-commerce\\e-commerce\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\AL_hamd\\.nuget\\packages\\",
-      "outputPath": "D:\\project\\e-commerce\\e-commerce\\Core\\obj\\",
+      "projectPath": "D:\\Anther Project\\e-commerce\\e-commerce\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\it legend\\.nuget\\packages\\",
+      "outputPath": "D:\\Anther Project\\e-commerce\\e-commerce\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\AL_hamd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+        "C:\\Users\\it legend\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -66,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
