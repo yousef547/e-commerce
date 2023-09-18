@@ -14,42 +14,42 @@ namespace Infrastracure.Data
     {
         public static async Task SeedAsync(StoreContext context)
         {
-            if (!context.ProductBrands.Any())
-            {
+            //          if (!context.ProductBrands.Any())
+            //          {
 
-                List<ProductBrand> brands = new List<ProductBrand> {
-   new ProductBrand {
-    Id= 1,
-    Name= "Angular"
-  },
-   new ProductBrand {
-    Id= 2,
-    Name= "NetCore"
-  },
-   new ProductBrand {
-    Id= 3,
-    Name= "VS Code"
-  },
-   new ProductBrand {
-    Id= 4,
-    Name= "React"
-  },
-   new ProductBrand {
-    Id= 5,
-    Name= "Typescript"
-  },
-   new ProductBrand {
-    Id= 6,
-    Name= "Redis"
-  }
-  };
+            //              List<ProductBrand> brands = new List<ProductBrand> {
+            // new ProductBrand {
+            //  Id= 1,
+            //  Name= "Angular"
+            //},
+            // new ProductBrand {
+            //  Id= 2,
+            //  Name= "NetCore"
+            //},
+            // new ProductBrand {
+            //  Id= 3,
+            //  Name= "VS Code"
+            //},
+            // new ProductBrand {
+            //  Id= 4,
+            //  Name= "React"
+            //},
+            // new ProductBrand {
+            //  Id= 5,
+            //  Name= "Typescript"
+            //},
+            // new ProductBrand {
+            //  Id= 6,
+            //  Name= "Redis"
+            //}
+            //};
 
-                foreach (var brand in brands)
-                {
-                    await context.ProductBrands.AddAsync(brand);
-                }
-                context.SaveChanges();
-            }
+            //              foreach (var brand in brands)
+            //              {
+            //                  await context.ProductBrands.AddAsync(brand);
+            //              }
+            //              context.SaveChanges();
+            //          }
             //            if (!context.ProductTypes.Any())
             //            {
 
@@ -77,10 +77,10 @@ namespace Infrastracure.Data
             //                await context.SaveChangesAsync();
             //            }
 
-            //            if (!context.products.Any())
-            //            {
+            //if (!context.products.Any())
+            //{
 
-            //                var products = new List<Products>
+            //    var products = new List<Products>
             //                {
             //                     new Products {
             //    Name= "Angular Speedster Board 2000",
@@ -227,11 +227,10 @@ namespace Infrastracure.Data
             //    ProductBrandId= 1
             //  }
             //                };
-            //                context.products.AddRange(products);
-            //                await context.SaveChangesAsync();
-            //            }
+            //    context.products.AddRange(products);
+            //    await context.SaveChangesAsync();
+            //}
             //if (context.ChangeTracker.HasChanges()) await context.SaveChangesAsync();
-            //await context.SaveChangesAsync();
         }
     }
 }
