@@ -13,7 +13,7 @@ namespace e_commerce.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase
+    public class ProductController : BaseApiController
     {
 
         private readonly IGenericRepository<Products> _productRepository;
