@@ -1,4 +1,5 @@
-﻿using Infrastracure.Data;
+﻿using e_commerce.Api.Errors;
+using Infrastracure.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,7 +20,7 @@ namespace e_commerce.Api.Controllers
             var thing = _context.products.Find(50);
             if(thing == null)
             {
-                return NotFound();
+                return NotFound(new ApiResponse(404));
             }
             return Ok();
         }
@@ -35,7 +36,7 @@ namespace e_commerce.Api.Controllers
         [HttpGet("badrequest")]
         public IActionResult GetBadRequest()
         {
-            return BadRequest();
+            return BadRequest(new ApiResponse(400));
         }
 
         [HttpGet("badrequest/{id}")]
