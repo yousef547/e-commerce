@@ -18,12 +18,22 @@ namespace Infrastracure.Data
         }
         public async Task<Products> GetProductByIdAsync(int id)
         {
-            return await _context.products.FindAsync(id);
+            return await _context.products.Include(c => c.ProductBrand).Include(c => c.ProductType).FirstOrDefaultAsync(p=>p.Id==id);
         }
 
         public async Task<IReadOnlyList<Products>> GetProductsAsync()
         {
-            return await _context.products.ToListAsync();
+            return await _context.products.Include(c=>c.ProductBrand).Include(c => c.ProductType).ToListAsync();
+        }
+
+        public async Task<IReadOnlyList<ProductBrand>> GetProductsBrandsAsync()
+        {
+            return await _context.ProductBrands.ToListAsync();
+        }
+
+        public async Task<IReadOnlyList<ProductType>> GetProductsTypesAsync()
+        {
+            return await _context.ProductTypes.ToListAsync();
         }
     }
 }
