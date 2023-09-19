@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/e-commerce/e-commerce.Api/.vs/e-commerce.Api/FileContentIndex/c00eb7c1-9b77-40c3-b0ee-b3812a906434.vsidx
+/e-commerce/e-commerce.Api/.vs/e-commerce.Api/FileContentIndex/76865ef8-992e-4051-9ac4-2f93cfd4d05a.vsidx
+/e-commerce/e-commerce.Api/.vs/e-commerce.Api/FileContentIndex/516583c0-5824-4809-85cb-5b0189ddc768.vsidx
+/e-commerce/e-commerce.Api/.vs/e-commerce.Api/FileContentIndex/175268e7-6c2e-4f07-a47e-0bea30c1e781.vsidx
+/e-commerce/e-commerce.Api/.vs/ProjectEvaluation/e-commerce.api.projects.v6.1
+/e-commerce/e-commerce.Api/.vs/ProjectEvaluation/e-commerce.api.metadata.v6.1
+/e-commerce/e-commerce.Api/.vs/e-commerce.Api/v17/.futdcache.v2
+/e-commerce/e-commerce.Api/.vs/e-commerce.Api/v17/.suo
