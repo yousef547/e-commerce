@@ -8,9 +8,9 @@ namespace e_commerce.Api.Controllers
     [ApiController]
     public class ErrorController : BaseApiController
     {
-        public IActionResult Error(int code)
-        {
-            return new ObjectResult(new ApiResponse(code));
-        }
+        //public IActionResult Error(int code)
+        //{
+        //    return new ObjectResult(new ApiResponse(code));
+        //}
     }
 }

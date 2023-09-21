@@ -17,6 +17,11 @@ namespace Infrastracure.Data
             _context = storeContext;
         }
 
+        public async Task<int> CountAsync(ISpecification<T> spec)
+        {
+            return await ApplySpecifications(spec).CountAsync();
+        }
+
         public async Task<T> GetByIdAsync(int id)
         {
             return await _context.Set<T>().FindAsync(id);

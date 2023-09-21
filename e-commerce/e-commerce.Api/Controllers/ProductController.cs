@@ -4,6 +4,7 @@ using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
 using e_commerce.Api.Dtos;
+using e_commerce.Api.Helpers;
 using Infrastracure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -28,12 +29,14 @@ namespace e_commerce.Api.Controllers
             _mapper=mapper;
         }
         [HttpGet]
-        public async Task<ActionResult<List<ProductToReturnDto>>> GetProduct()
+        public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProduct([FromQuery]ProductSpesParams productParams)
         {
-            var spec = new ProductWithTypeAndBrendSpecification();
+            var spec = new ProductWithTypeAndBrendSpecification(productParams);
+            var countSpec = new ProductWithFilterCountSepecification(productParams);
+            var totalItems = await _productRepository.CountAsync(countSpec);
             var products = await _productRepository.ListAsync(spec);
-
-            return Ok(_mapper.Map<IReadOnlyList<Products>, IReadOnlyList<ProductToReturnDto>>(products));
+            var data = _mapper.Map<IReadOnlyList<Products>, IReadOnlyList<ProductToReturnDto>>(products);
+            return Ok( new Pagination<ProductToReturnDto>(productParams.PageIndex,productParams.PageSize,totalItems,data));
         }
 
         [HttpGet("types")]
