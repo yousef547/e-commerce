@@ -58,7 +58,6 @@ constructor(private shop:ShopService) {
 
   onBrandSelected(brandId:number){
     this.shopParams.brandId = brandId;
-    this.shopParams.pageNumber = 1;
     this.getProduct();
   }
 
