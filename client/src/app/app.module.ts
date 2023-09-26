@@ -8,6 +8,7 @@ import { CoreModule } from './core/core.module';
 import { ShopModule } from './shop/shop.module';
 import { HomeModule } from './home/home.module';
 import { ErroInterceptor } from './core/interceptors/erro.interceptor';
+import { LoadingInterceptor } from './core/interceptors/loading.interceptor';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ErroInterceptor } from './core/interceptors/erro.interceptor';
     HomeModule
     ],
   providers: [
-    {provide:HTTP_INTERCEPTORS,useClass:ErroInterceptor,multi:true}
+    {provide:HTTP_INTERCEPTORS,useClass:ErroInterceptor,multi:true},
+    {provide:HTTP_INTERCEPTORS,useClass:LoadingInterceptor,multi:true}
   ],
   bootstrap: [AppComponent]
 })
